@@ -1,0 +1,62 @@
+#one{
+    width: 350px;
+}
+#two{
+	width: 350px;
+	height: 225px;
+}
+#three{
+	width: 350px;
+}
+#four{
+	width: 350px;
+}
+p{
+    font-family: "Oranienbaum", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+body{
+	background-color: rgba(102, 234, 252, 0.288);
+	color: rgb(88, 84, 84);
+}
+h1{
+	text-align: center;
+	color: rgb(61, 61, 61);
+    font-family: "MedievalSharp", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-weight: bold;
+}
+h2{
+    font-family: "MedievalSharp", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-weight: bold;
+    text-align: center;
+}
+h3{
+    font-family: "Oranienbaum", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-weight: bold;
+}
+ul{
+    font-family: "Oranienbaum", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+#heading{
+	text-align: center;
+}
+#square{
+	background-color: rgba(138, 214, 204, 0.308);
+}
+#content_wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#img_wrapper{
+    display: flex;
+    align-items: center;
+}
