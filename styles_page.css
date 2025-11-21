@@ -60,3 +60,7 @@ ul{
     display: flex;
     align-items: center;
 }
+#top_wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
