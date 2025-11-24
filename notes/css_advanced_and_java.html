@@ -1,0 +1,58 @@
+<!--AE 7th CSS Advanced Notes-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Advanced CSS Notes</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap" rel="stylesheet">
+    <script>
+        showing = "none"
+        function show(){
+            alert("The content has chagned :)")
+            if (showing == "none"){
+                document.getElementById("hidden").style.display = "block"
+                display = "block"
+                showing = "block"
+                document.getElementById("button").innerHTML = "Show Less"
+            }else{
+                document.getElementById("hidden").style.display = "none"
+                showing = "none"
+                document.getElementById("button").innerHTML = "Show More"
+            }
+        }
+        images = ["https://saadmeatscanton.com/cdn/shop/products/Untitleddesign_22_500x.png?v=1632070309", "https://d2flk5wpt7r0oq.cloudfront.net/app/uploads/2022/04/Peppa-Pig-wearing-rainboots-and-coat.png", 
+        "https://excelsiorclasses.com/wp-content/uploads/2018/04/2018-04-16_10-33-35.jpg", "https://www.mbari.org/wp-content/uploads/Macropinna_microstoma_V2571_01-_1800.jpg"]
+        index = 0
+        function change(){
+            document.getElementById("one").src = images[index]
+            index += 1
+            if(index >= images.length){
+                index = 0
+            }
+        }
+        function colors(){
+            
+        }
+    </script>
+    </head>
+    <body>
+        <h1>The Barreleye Fish</h1>
+        <input type="color" id="user">
+        <div id="content-wrapper">
+        <div id="left">
+            <p>These deep-dwelling fish can see through their own foreheads. Even in a world full of adaptations for seeing in near-total darkness, the barreleye fish (<em>Macropinna microstoma</em>) stands out as one of the most bizarre. Two small indentations where eyes might normally appear on a fish are actually the barreleye's olfactory organs, and its eyes are two glowing green orbs behind its face in a fluid-filled dome that gaze up towards the top of its head. In 2009, MBARI researchers showed that the fish can rotate its eyes towards the front to see its food when eating. Before that, scientists believed that the barreleye's gaze was fixed looking straight up. Researchers think that the fish hovers below a siphonophore's tentacles to steal food.</p>
+            <p id="hidden">Animal Type: Fishes; Maximum Size: 15 cm (6 inches); Depth: 600-800 m (2,000-2,600 feet); Habitat: Midwater in the twilight (mesopelagic) zone; Diet: Zooplankton including crustaceans and siphonophores; Range: North Pacific Ocean bering Sea to Japan and Baja California</p>
+        <button id="button" onclick={show()}>Show More</button>
+        </div>
+        <div id="img-wrapper">
+        <img id="one" onmouseover={change()} src="https://www.mbari.org/wp-content/uploads/Macropinna_microstoma_V2571_01-_1800.jpg"/>
+        <img id="two" src="https://www.mbari.org/wp-content/uploads/Macropinna_microstoma_D0779_01_1150.jpg"/>
+        <img id="three" src="https://www.mbari.org/wp-content/uploads/Macropinna_microstoma_V4377_07_1150.jpg"/>
+        </div>
+        </div>
+    </body>
+</html>
