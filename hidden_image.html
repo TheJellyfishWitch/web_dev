@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blobfish</title>
+<script>
+    showing = "none"
+    function show(){
+        if (showing == "none"){
+            document.getElementById("hidden").
+            style.display = "block"
+            display = "block"
+            showing = "block"
+            document.getElementById("button").
+            innerHTML = "Show Less"
+        }
+        
+    }
+</script>
+</head>
+<body>
+    <h1>Blobfish</h1>
+
+    <p>The blobfish is a deep-sea fish from the waters off of Australia and New Zealand that is famous for its "blob-like" appearance, which is caused by decompression damage when brought to the surface. In its natural habitat, under immense pressure, it has a gelatinous body with a density slightly less than water, allowing it to float above the seafloor without a swim bladder or strong skeleton. This allows it to passively consume small crustaceans and other edible matter that floats by. </p>
+
+    <h3>Fun Facts:</h3>
+    <ul>
+        <li><b>Deep-sea dweller:</b> Blobfish live at depths of 2,000 to 4,000 feet where pressure is intense. </li>
+        <li><b>Looks normal underwater:</b> In its natural habitat, the blobfish is a more regular-looking fish, as the immense water pressure keeps its body from collapsing. </li>
+        <li><b>Gelatinous body:</b> A gelatinous, jelly-like body with very little muscle and soft bones helps them survive the high pressure of the deep ocean. </li>
+        <li><b>No teeth:</b> Blobfish have no teeth. </li>
+    </ul>
+
+    <p>Blobfish have several physical adaptations for survival in the deep sea, including a gelatinous, low-density body and a lack of a swim bladder, which allow it to float and withstand immense pressure. Its soft, gelatinous flesh is slightly less dense than water, and its bones are soft and flexible, preventing it from being crushed by the extreme pressure of its deep-sea habitat. This body structure makes it an efficient "lie-in-wait" predator. </p>
+
+    <img src="https://a-z-animals.com/media/2022/11/shutterstock_2207606225-1536x922.jpg" height="400px"/>
+
+    <br></br>
+    
+    <img id="hidden" onmouseover={change()} src="https://excelsiorclasses.com/wp-content/uploads/2018/04/2018-04-16_10-33-35.jpg"/>
+</body>
+</html>
