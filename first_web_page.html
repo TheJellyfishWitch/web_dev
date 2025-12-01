@@ -11,12 +11,27 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Oranienbaum&display=swap" rel="stylesheet">
+<script>
+	showing = "none"
+        function show(){
+            if (showing == "none"){
+                document.getElementById("hidden").style.display = "block"
+                display = "block"
+                showing = "block"
+                document.getElementById("button").innerHTML = "Show Less"
+            }else{
+                document.getElementById("hidden").style.display = "none"
+                showing = "none"
+                document.getElementById("button").innerHTML = "Show More"
+            }
+        }
+</script>
 	</head>
 
 	<body>
 		<h1>Deep Sea Creatures</h1>
 		<h2>What makes the creatures of the deep sea so interesting?</h2>
-		<p>Deep sea creatures are fascinating because of their unique adaptations to extreme conditions like crushing pressure, total darkness, and scarce food. These adaptations include <em>bioluminescence</em> for hunting and communication, <em>transparent or red-colored bodies</em>  for camouflage, <em>large eyes</em>  to capture faint light, and other features like <em>massive mouths</em>, <em>sharp teeth</em>, or <em>flexible bodies</em>  to survive in this harsh environment.</p>
+		<p style="text-align: center;">Deep sea creatures are fascinating because of their unique adaptations to extreme conditions like crushing pressure, total darkness, and scarce food. These adaptations include <em>bioluminescence</em> for hunting and communication, <em>transparent or red-colored bodies</em>  for camouflage, <em>large eyes</em>  to capture faint light, and other features like <em>massive mouths</em>, <em>sharp teeth</em>, or <em>flexible bodies</em>  to survive in this harsh environment.</p>
 
 		<div id="top_wrapper">
 		<div id="left">
@@ -53,6 +68,7 @@
 		<p>Reaches around 6 inches at maximum size and typically in the midnight (bathypelagic) zone from 500-5,000 feet down. Its diet mainly constists with plankton and gelatinous zooplankton and crustaceans, lives worldwide.</p>
 		</div>
 
+		<br></br>
 		<h3>Fun Facts</h3>
 		<ul>
 			<li><b>Habitat:</b> Midwater, typically in the midnight (bathypelagic) zone</li>
@@ -95,5 +111,13 @@
 		</div>
 		</div>
 		</div>
+		
+		<br></br>
+		<button id="button" onclick="{show()}">Show More</button>
+		<p id="hidden">Jellyfish are everywere and there are so many types, so far the most common classes of the jellies are Scyphozoa (true jellyfish), Cubozoa (box jellyfish), Hydrozoa (which includes the Portuguese man-o'-war), and Ctenophora (comb jellies).</p>
+		<h3 id="hidden">List of Jellies</h3>
+		<ul>
+			<li></li>
+		</ul>
 	</body>
 </html>
