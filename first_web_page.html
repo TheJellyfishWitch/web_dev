@@ -25,6 +25,15 @@
                 document.getElementById("button").innerHTML = "Show More"
             }
         }
+		images = ["https://saadmeatscanton.com/cdn/shop/products/Untitleddesign_22_500x.png?v=1632070309", "https://www.mbari.org/wp-content/uploads/Macropinna_microstoma_V2571_01-_1800.jpg"]
+        index = 0
+        function change(){
+            document.getElementById("one").src = images[index]
+            index += 1
+            if(index >= images.length){
+                index = 0
+            }
+        }
 </script>
 	</head>
 
@@ -113,11 +122,13 @@
 		</div>
 		
 		<br></br>
-		<button id="button" onclick="{show()}">Show More</button>
-		<p id="hidden">Jellyfish are everywere and there are so many types, so far the most common classes of the jellies are Scyphozoa (true jellyfish), Cubozoa (box jellyfish), Hydrozoa (which includes the Portuguese man-o'-war), and Ctenophora (comb jellies).</p>
-		<h3 id="hidden">List of Jellies</h3>
+		<button id="button" onclick={show()}>Show More</button>
+		<div id="hidden">
+		<p>Jellyfish are everywere and there are so many types, so far the most common classes of the jellies are Scyphozoa (true jellyfish), Cubozoa (box jellyfish), Hydrozoa (which includes the Portuguese man-o'-war), and Ctenophora (comb jellies).</p>
+		<h3>List of Jellies</h3>
 		<ul>
 			<li></li>
 		</ul>
+		</div>
 	</body>
 </html>
