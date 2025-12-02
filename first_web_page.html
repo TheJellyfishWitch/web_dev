@@ -12,20 +12,19 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Oranienbaum&display=swap" rel="stylesheet">
 <script>
-	showing = "none"
-        function show(){
-            if (showing == "none"){
-                document.getElementById("hidden").style.display = "block"
-                display = "block"
-                showing = "block"
-                document.getElementById("button").innerHTML = "Show Less"
-            }else{
-                document.getElementById("hidden").style.display = "none"
-                showing = "none"
-                document.getElementById("button").innerHTML = "Show More"
-            }
+	showing = "none";
+    function show(){
+        if (showing === "none") {
+            document.getElementById("hidden").style.display = "block";
+            showing = "block";
+            document.getElementById("button").innerHTML = "Show Less";
+        } else {
+            document.getElementById("hidden").style.display = "none";
+            showing = "none";
+            document.getElementById("button").innerHTML = "Show More";
         }
-		images = ["https://saadmeatscanton.com/cdn/shop/products/Untitleddesign_22_500x.png?v=1632070309", "https://www.mbari.org/wp-content/uploads/Macropinna_microstoma_V2571_01-_1800.jpg"]
+    }
+		images = ["https://scontent-sjc6-1.xx.fbcdn.net/v/t39.30808-6/496255563_1131295122376458_1986961664033132179_n.jpg?stp=dst-jpg_p526x296_tt6&_nc_cat=104&ccb=1-7&_nc_sid=833d8c&_nc_ohc=LHIk8Zv1kSEQ7kNvwFHHLQ4&_nc_oc=AdkQimmV69Z6thKmQ2zNWE9TQYXHLqh_6DWgNIs5aMG2cjrsIkxeVSOxUmIvbw_yUpDI1JQNMKaBTtX74LnqoVC8&_nc_zt=23&_nc_ht=scontent-sjc6-1.xx&_nc_gid=Sl657ShNtZlyzl3oXRhvGg&oh=00_Afle3-0rRlJ51A6qHPbi2p1iAC-4EBFY8-AaxXBmGVIHGg&oe=693449C6", "https://www.mbari.org/wp-content/uploads/2017_Atolla_vanhoeffeni_D0923_03-960.jpeg"]
         index = 0
         function change(){
             document.getElementById("one").src = images[index]
@@ -53,6 +52,7 @@
 			<li><b>The Vampire squid (<em>Vampyroteuthis infernalis</em>):</b> deep-sea cephalopod named for its dark, cape-like webbing between its arms and red eyes, not for bloodsucking</li>
 		</ul>
 		</div>
+
 		<div id="right">
 			<h3 style="text-align: center;">Recently Discovered Deep Sea Creatures</h3>
 			<ul>
@@ -70,7 +70,7 @@
 		<h3 id="heading">But my favorite of these magical creatures is tied between the Deep-sea Crown jelly & the Giant Phantom jelly</h3>
 
 		<div id="content_wrapper">
-		<div>
+		<div id="left">
 		<div id="square">
 		<h2>The Deep-sea Crown Jelly</h2>
 		<p>The Deep-sea Crown jelly (<em>Atolla spp.</em>) is one of the most common jellies in the ocean's depths. Most have a distinctive elongated tentacle that can be up to six times the diameter of the jelly's bell. Scientists suspect that characteristic trailing tentacle helps this jelly capture food. Predators lurk in the darkness, ready to pounce. The bright red bell helps keep Atolla hidden—in the deep sea, red appears black. If Atolla's crimson camouflage does not work, this jelly sounds the alarm with pinwheels of brilliant blue bioluminescence. A burst of light in the dark water not only disorients predators but it also acts like a burglar alarm telling larger predators there is something interesting happening here. The threat of a bigger predator scares off any immediate danger, allowing the jelly to swim to safety.</p>
@@ -86,14 +86,15 @@
 			<li><b>Red Color:</b> Their natural scarlet color is a form of camouflage in the deep sea, as red light does not penetrate to those depths.</li>
 
 		</ul>
-		<a href="https://www.mbari.org/animal/deep-sea-crown-jelly/">More Info</a>
 		<br>
+		<a href="https://www.mbari.org/animal/deep-sea-crown-jelly/">More Info</a>
+		
 
 		<div id="img_wrapper">
-		<img id="one" src="https://www.mbari.org/wp-content/uploads/2017_Atolla_vanhoeffeni_D0923_03-960.jpeg" alt="Giant Phantom Jelly"/>
+		<img id="one" onmouseover={change()} src="https://www.mbari.org/wp-content/uploads/2017_Atolla_vanhoeffeni_D0923_03-960.jpeg" alt="Giant Phantom Jelly"/>
 		<img id="two" src="https://www.mbari.org/wp-content/uploads/Atolla_sp._10-1024.jpg" alt="Giant Phantom Jelly"/>
 		</div>
-		</div>	
+		</div>
 
 		<div id="right">
 		<div id="square">
@@ -101,6 +102,7 @@
 		<p>The Deep-sea Phantom jelly (<em>Stygiomedusa gigantea</em>) the first specimen of the giant phantom jelly was collected in 1899, but it was not until 60 years later that scientists recognized this as a new species. Even now, scientists still know very little about this animal. The bell of this deep-sea denizen is more than one meter (3.3 feet) across and trails four ribbon-like oral (or mouth) arms that can grow to more than 10 meters (33 feet) in length. Reasurchers at MBARI have logged thousands of dives, yet they've only seen this spectacular species nine times.</p>
 		<p>Maximum size is over 3.3 feet across and 33 feet long. Lives between the surface and 22,000 feet down, typically in the midnight (bathypelagic) zone. The giatn phantom jelly eats presumably, plankton and small fishes and lives worldwide except for the Arctic Ocean.</p>
 		</div>
+		
 
 		<br></br>
 		<h3>Fun Facts</h3>
@@ -113,6 +115,7 @@
 		</ul>
 		<a href="https://www.mbari.org/animal/giant-phantom-jelly/">More Info</a>
 		<br>
+		
 
 		<div id="img_wrapper">
 		<img id="three" src="https://www.mbari.org/wp-content/uploads/Stygiomedusa_gigantea_D1401_03_1800.jpg" alt="Giant Phantom Jelly"/>
@@ -122,13 +125,34 @@
 		</div>
 		
 		<br></br>
+
 		<button id="button" onclick={show()}>Show More</button>
 		<div id="hidden">
 		<p>Jellyfish are everywere and there are so many types, so far the most common classes of the jellies are Scyphozoa (true jellyfish), Cubozoa (box jellyfish), Hydrozoa (which includes the Portuguese man-o'-war), and Ctenophora (comb jellies).</p>
-		<h3>List of Jellies</h3>
+		<h3>List of Jellies found in the Montery Bay Aquarium</h3>
 		<ul>
-			<li></li>
+			<li> Bell jelly (<em>Polyorchis</em>)</li>
+			<li>Black sea nettle (<em>Chrysaora achlyos</em>)</li>
+			<li>Bloodybelly comb jelly (<em>Lampocteis cruentiventer</em>)</li>
+			<li>Blubber jelly (<em>Catostylus</em>)</li>
+			<li>Box jelly (<em>Tripedalia cystophora</em>)</li>
+			<li>Comb jelly (<em>Ctenophora</em>)</li>
+			<li>Cross jelly (<em>Mitrocoma cellularia</em>)</li>
+			<li>Crown jelly (<em>Cephea cephea</em>)</li>
+			<li>Crystal jelly (<em>Aequorea victoria</em>)</li>
+			<li>Egg yolk jelly (<em>Phacellophora camtschatica</em>)</li>
+			<li>Elegant jelly (<em>Tima</em>)</li>
+			<li>Lion's mane jelly (<em>Cyanea</em>)</li>
+			<li>Mediterranean jelly (<em>Cotylorhiza tuberculata</em>)</li>
+			<li>Midwater jelly (<em>Halicreas minimum</em>)</li>
+			<li>Moon jelly (<em>Aurelia</em>)</li>
+			<li>Purple-striped jelly (<em>Chrysaora colorata</em>)</li>
+			<li>Pacific Sea nettle (<em>Chrysaora fuscescens</em>)</li>
+			<li>Spotted jelly (<em>Mastigias papua</em>)</li>
+			<li>Upside-down jelly (<em>Cassiopea</em>)</li>
 		</ul>
+		<img src="https://www.trilliummontessori.org/wp-content/uploads/2024/10/Types-of-Jellyfish-Infographic-Featured-Image.jpg" height="400px"/>
 		</div>
+		
 	</body>
 </html>

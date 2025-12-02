@@ -4,20 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blobfish</title>
-<script>
-    showing = "none"
-    function show(){
-        if (showing == "none"){
-            document.getElementById("hidden").
-            style.display = "block"
-            display = "block"
-            showing = "block"
-            document.getElementById("button").
-            innerHTML = "Show Less"
-        }
-        
-    }
-</script>
+    <link rel="stylesheet" href="hidden_page.css">
 </head>
 <body>
     <h1>Blobfish</h1>
@@ -34,10 +21,15 @@
 
     <p>Blobfish have several physical adaptations for survival in the deep sea, including a gelatinous, low-density body and a lack of a swim bladder, which allow it to float and withstand immense pressure. Its soft, gelatinous flesh is slightly less dense than water, and its bones are soft and flexible, preventing it from being crushed by the extreme pressure of its deep-sea habitat. This body structure makes it an efficient "lie-in-wait" predator. </p>
 
+    <div id="image_wrapper">
     <img src="https://a-z-animals.com/media/2022/11/shutterstock_2207606225-1536x922.jpg" height="400px"/>
 
-    <br></br>
+    <img src="https://excelsiorclasses.com/wp-content/uploads/2018/04/2018-04-16_10-33-35.jpg" height="400px"/>
+    </div>
     
-    <img id="hidden" onmouseover={change()} src="https://excelsiorclasses.com/wp-content/uploads/2018/04/2018-04-16_10-33-35.jpg"/>
+    <div class="container">        
+    <p><b>Hover over me :)</b> &darr;</p>
+    <img src="https://scontent-sjc6-1.xx.fbcdn.net/v/t39.30808-6/496255563_1131295122376458_1986961664033132179_n.jpg?stp=dst-jpg_p526x296_tt6&_nc_cat=104&ccb=1-7&_nc_sid=833d8c&_nc_ohc=LHIk8Zv1kSEQ7kNvwFHHLQ4&_nc_oc=AdkQimmV69Z6thKmQ2zNWE9TQYXHLqh_6DWgNIs5aMG2cjrsIkxeVSOxUmIvbw_yUpDI1JQNMKaBTtX74LnqoVC8&_nc_zt=23&_nc_ht=scontent-sjc6-1.xx&_nc_gid=Sl657ShNtZlyzl3oXRhvGg&oh=00_Afle3-0rRlJ51A6qHPbi2p1iAC-4EBFY8-AaxXBmGVIHGg&oe=693449C6" alt="blobfish :)" class="hidden-image" height="400px">
+    </div>
 </body>
 </html>

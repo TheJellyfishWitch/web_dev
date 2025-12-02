@@ -1,0 +1,17 @@
+container {
+  position: relative; /* Needed for absolute positioning if used */
+}
+
+.hidden-image {
+  opacity: 0; /* Hides the image */
+  transition: opacity 0.3s ease; /* Optional: adds a smooth transition */
+}
+
+.container:hover .hidden-image {
+  opacity: 1;
+}
+
+#image_wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
