@@ -10,11 +10,11 @@ def home():
 
 @app.route("/contact")
 def contact():
-    return "<p>Don't contact me. I don't wanna talk to you or care what you have to say :)</p>"
+    return render_template("contact.html")
 
 @app.route("/<name>")
 def user(name):
-    return f"<h1>I said don't contact me {name}!</h1>"
+    return f"<h1>Hello {name}! you stole the Mona Lisa, we are coming for you >:]</h1>"
 
 if __name__ == "__main__":
     app.run(debug=True)
