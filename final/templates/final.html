@@ -33,16 +33,6 @@
                 index = 0
             }
         }
-
-        images = ["https://www.snowbird.com/_bluedrop/images/sites/default/files/2025-06/3.11.23-Otto-19_guiding-lessons_mountain-school_adult-group_1000x667.jpg?u=aHR0cHM6Ly9jbXMuc25vd2JpcmQuY29tL3NpdGVzL2RlZmF1bHQvZmlsZXMvMjAyNS0wNi8zLjExLjIzLU90dG8tMTlfZ3VpZGluZy1sZXNzb25zX21vdW50YWluLXNjaG9vbF9hZHVsdC1ncm91cF8xMDAweDY2Ny5qcGc%3D&d=b3cf22beb52b6d9758e0ab9fb677d819&q=75&w=1000&h=667", "https://www.snowbird.com/_bluedrop/images/sites/default/files/2024-10/Powderbird.LeeCohen-26_upgradeable-experiences_upgrade-your-day_powderbird_1000x667.jpg?u=aHR0cHM6Ly9jbXMuc25vd2JpcmQuY29tL3NpdGVzL2RlZmF1bHQvZmlsZXMvMjAyNC0xMC9Qb3dkZXJiaXJkLkxlZUNvaGVuLTI2X3VwZ3JhZGVhYmxlLWV4cGVyaWVuY2VzX3VwZ3JhZGUteW91ci1kYXlfcG93ZGVyYmlyZF8xMDAweDY2Ny5qcGc%3D&d=34ef796746cf02387fd9a33eb60438a9&q=75&w=1000&h=667", "https://www.snowbird.com/_bluedrop/images/sites/default/files/2025-10/5.3.24.Otto-18_cliff-spa_spa-overview_rooftop-pool-hot-tub_winter_1000x667.jpg?u=aHR0cHM6Ly9jbXMuc25vd2JpcmQuY29tL3NpdGVzL2RlZmF1bHQvZmlsZXMvMjAyNS0xMC81LjMuMjQuT3R0by0xOF9jbGlmZi1zcGFfc3BhLW92ZXJ2aWV3X3Jvb2Z0b3AtcG9vbC1ob3QtdHViX3dpbnRlcl8xMDAweDY2Ny5qcGc%3D&d=aaf74a9d3153d176ac9df20ec1b9d72e&q=75&w=1000&h=667", "https://www.snowbird.com/_bluedrop/images/sites/default/files/2025-10/R5_C7096_snowbird_homepage_dining_seventyone_1000x667.jpg?u=aHR0cHM6Ly9jbXMuc25vd2JpcmQuY29tL3NpdGVzL2RlZmF1bHQvZmlsZXMvMjAyNS0xMC9SNV9DNzA5Nl9zbm93YmlyZF9ob21lcGFnZV9kaW5pbmdfc2V2ZW50eW9uZV8xMDAweDY2Ny5qcGc%3D&d=6b6c7fd2cae8a1ba0a9e18f39d3f59ba&q=75&w=1000&h=667", "https://www.snowbird.com/_bluedrop/images/sites/default/files/2025-10/4.4.25.Otto-11_snowbird_homepage_skiing_tram_1000x667.jpg?u=aHR0cHM6Ly9jbXMuc25vd2JpcmQuY29tL3NpdGVzL2RlZmF1bHQvZmlsZXMvMjAyNS0xMC80LjQuMjUuT3R0by0xMV9zbm93YmlyZF9ob21lcGFnZV9za2lpbmdfdHJhbV8xMDAweDY2Ny5qcGc%3D&d=a26f65743282ad18d0945ae068c3947d&q=75&w=1000&h=667", "https://www.snowbird.com/_bluedrop/images/sites/default/files/2025-10/1.27.25.Otto-35_snowbird_hompeage_aerial-tram_1000x667.jpg?u=aHR0cHM6Ly9jbXMuc25vd2JpcmQuY29tL3NpdGVzL2RlZmF1bHQvZmlsZXMvMjAyNS0xMC8xLjI3LjI1Lk90dG8tMzVfc25vd2JpcmRfaG9tcGVhZ2VfYWVyaWFsLXRyYW1fMTAwMHg2NjcuanBn&d=6d225a1ee810369e9a192dded4414b15&q=75&w=1000&h=667", "https://www.snowbird.com/_bluedrop/images/sites/default/files/2025-10/3.31.23-Otto-19_snowbird_lodging_the-cliff-lodge_sunset_slopeside_1000x667.jpg?u=aHR0cHM6Ly9jbXMuc25vd2JpcmQuY29tL3NpdGVzL2RlZmF1bHQvZmlsZXMvMjAyNS0xMC8zLjMxLjIzLU90dG8tMTlfc25vd2JpcmRfbG9kZ2luZ190aGUtY2xpZmYtbG9kZ2Vfc3Vuc2V0X3Nsb3Blc2lkZV8xMDAweDY2Ny5qcGc%3D&d=7420ed931d8f688c8fe33d2b760c422c&q=75&w=1000&h=667"]
-        index = 0
-        function change_two(){
-            document.getElementById("two").src = images[index]
-            index += 1
-            if(index >= images.length){
-                index = 0
-            }
-        }
 </script>
     <style>
         body{
@@ -62,20 +52,16 @@
             padding: 15px;
             margin: 10px;
         }
-        #content_wrapper{
+        #top_stuff{
             display: grid;
             grid-template-columns: 2fr 1fr;
-        }
-        #img_wrapper{
-            display: flex;
-            align-items: center;
-        }
-        #top_wrapper{
-            display: grid;
-            grid-template-columns: 1fr 1fr;
+            padding: 20px;
         }
         #hidden{
             display: none;
+        }
+        #right{
+            margin: 20px;
         }
     </style>
 {% endblock %}
@@ -83,28 +69,21 @@
 <body>
     <div id="top_stuff">
     <div id="left">
-    <p style="text-align: center;">Snowbird Ski Restort has many activites to meet your snow adventures for all levels of expertice. Over 500 inches of legendary snow, 2,500 acres of terrain and 3,000 vertical feet, here is where skiers and snowboarders earn stores worth telling for years to come. Snowbird resort offers a dining experiance showcasing slopeside cafés to elegant fine dining, here we serve up bold flavor and breathtaking views with every meal.</p>
+    <p>Snowbird Ski Restort has many activites to meet your snow adventures for all levels of expertice. Over 500 inches of legendary snow, 2,500 acres of terrain and 3,000 vertical feet, here is where skiers and snowboarders earn stores worth telling for years to come. Snowbird resort offers a dining experiance showcasing slopeside cafés to elegant fine dining, here we serve up bold flavor and breathtaking views with every meal.</p>
 
     <h3>Why Would You Visit?</h3>
     
     <ul>
         <li><b>The Cliff Spa: </b>Treat yourself to relaxing massages, pedicures and facials or you can unwind with yoga and a dip in the rooftop pool. At The Cliff Spa, rejuvenate your mind, body and spirit.</li>
         <li><b>Upgradeable Experiences: </b>Go bigger with Powerbird helicopter skiing or Snowbird Mountian Guide Snowcat skiing - or go faster with reserved parking and Fast Tracks and maximize every moment on the mountian.</li>
-        <li><b>Guiding & Lessons</b>From day 1 to day 100, there are always opportunites to grow at Snowbird. Let our expert snowsports instructors and backcountry guides lead the way from our beginner terrain to Avalanche Rescue courses.</li>
+        <li><b>Guiding & Lessons: </b>From day 1 to day 100, there are always opportunites to grow at Snowbird. Let our expert snowsports instructors and backcountry guides lead the way from our beginner terrain to Avalanche Rescue courses.</li>
         <li><b>The Aerial Tram: </b> Whether they're skiing or snowboarding down or enjoying the view from the top, Snowbird's iconic Aerial Tram has whisked adventures to Hidden Peak and 11,000 feet since 1971.</li>
     </ul>
-    </div>
-
-    <div id="right">
-    <img  id="one" onmouseover={change()} src="https://www.snowbird.com/_bluedrop/images/sites/default/files/2025-10/1.27.25.Otto-35_snowbird_hompeage_aerial-tram_1000x667.jpg?u=aHR0cHM6Ly9jbXMuc25vd2JpcmQuY29tL3NpdGVzL2RlZmF1bHQvZmlsZXMvMjAyNS0xMC8xLjI3LjI1Lk90dG8tMzVfc25vd2JpcmRfaG9tcGVhZ2VfYWVyaWFsLXRyYW1fMTAwMHg2NjcuanBn&d=6d225a1ee810369e9a192dded4414b15&q=75&w=1000&h=667" height="400px"/>
-    </div>
-    </div>
-
-    <br></br>
-
+    
     <button id="button" onclick={show()}>Show More</button>
     <div id="hidden">
-    <p>Here at Snowbird you can experience the best of Utah hotels with our mountain-side lodging, just steps from world-class ski terrain and stunning alpine views. Choose from a variety of options, including full-service hotel rooms with extravagant dining and rooftop spas, to cozy condos with kitchens and spacious living areas. Staying within the Snowbird Village means you're waking up closer to first Tram, enjoying après steps from your room and relaxing in comfort when the lifts stop spinning.</p>
+    <p>Here at Snowbird you can experience the best of Utah hotels with our mountain-side lodging, just steps from world-class ski terrain and stunning alpine views.</p>
+    <p>Choose from a variety of options, including full-service hotel rooms with extravagant dining and rooftop spas, to cozy condos with kitchens and spacious living areas. Staying within the Snowbird Village means you're waking up closer to first Tram, enjoying après steps from your room and relaxing in comfort when the lifts stop spinning.</p>
     <h3>Some of our options:</h3>
     <ul>
         <li><b>The Cliff Lodge:</b>Features a world-class rooftop spa, dining for every style, ski-in/ski-out access and more.</li>
@@ -115,4 +94,12 @@
     </ul>
     <img id="two" onmouseover={change_two()} src="https://www.snowbird.com/_bluedrop/images/sites/default/files/2025-10/3.31.23-Otto-19_snowbird_lodging_the-cliff-lodge_sunset_slopeside_1000x667.jpg?u=aHR0cHM6Ly9jbXMuc25vd2JpcmQuY29tL3NpdGVzL2RlZmF1bHQvZmlsZXMvMjAyNS0xMC8zLjMxLjIzLU90dG8tMTlfc25vd2JpcmRfbG9kZ2luZ190aGUtY2xpZmYtbG9kZ2Vfc3Vuc2V0X3Nsb3Blc2lkZV8xMDAweDY2Ny5qcGc%3D&d=7420ed931d8f688c8fe33d2b760c422c&q=75&w=1000&h=667" height="400px"/>
     </div>
+    </div>
+
+    <div id="right">
+    <img id="one" onmouseover={change()} src="https://www.snowbird.com/_bluedrop/images/sites/default/files/2025-10/1.27.25.Otto-35_snowbird_hompeage_aerial-tram_1000x667.jpg?u=aHR0cHM6Ly9jbXMuc25vd2JpcmQuY29tL3NpdGVzL2RlZmF1bHQvZmlsZXMvMjAyNS0xMC8xLjI3LjI1Lk90dG8tMzVfc25vd2JpcmRfaG9tcGVhZ2VfYWVyaWFsLXRyYW1fMTAwMHg2NjcuanBn&d=6d225a1ee810369e9a192dded4414b15&q=75&w=1000&h=667" height="500px"/>
+    </div>
+    
+    </div>
+
 {% endblock %}
