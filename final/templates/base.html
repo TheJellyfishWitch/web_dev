@@ -21,13 +21,16 @@
             text-decoration: underline;
         }
     </style>
+
+    {% block extra_head %}{% endblock %}
+
 </head>
 <body>
-    <h1>First Flask Project</h1>
+    <h1>Snowbird Ski Restort</h1>
     <div id="nav">
         <a href="/">Home</a>
         <a href="/lessons">Ski Lessons</a>
-        <a href="/activities">Activites</a>
+        <a href="/activities">Activities</a>
     </div>
     {% block body %}{% endblock %}
 </body>

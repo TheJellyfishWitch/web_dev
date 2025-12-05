@@ -1,11 +1,9 @@
-<!--AE FINAL: Staycation Project-->
 {% extends "base.html" %}
 {% block content %}Snowbird Ski Resort{% endblock %}
-{% block head %}
+{% block extra_head %}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Snowbird Ski Resort</title>
-    <link rel="stylesheet" href="final_page.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oranienbaum&family=Quintessential&display=swap" rel="stylesheet">
@@ -46,13 +44,43 @@
             }
         }
 </script>
+    <style>
+        body{
+            background-color: rgba(215, 236, 250, 0.541);
+            color: rgb(41, 33, 11);
+            font-family: "Oranienbaum", serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+        h1{
+            text-align: center;
+            font-family: "Oranienbaum", serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+        button{
+            padding: 15px;
+            margin: 10px;
+        }
+        #content_wrapper{
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+        }
+        #img_wrapper{
+            display: flex;
+            align-items: center;
+        }
+        #top_wrapper{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        #hidden{
+            display: none;
+        }
+    </style>
 {% endblock %}
 {% block body %}
 <body>
-    <div id="square">
-    <h1>Snowbird Ski Resort</h1>
-    </div>
-
     <div id="top_stuff">
     <div id="left">
     <p style="text-align: center;">Snowbird Ski Restort has many activites to meet your snow adventures for all levels of expertice. Over 500 inches of legendary snow, 2,500 acres of terrain and 3,000 vertical feet, here is where skiers and snowboarders earn stores worth telling for years to come. Snowbird resort offers a dining experiance showcasing slopeside cafés to elegant fine dining, here we serve up bold flavor and breathtaking views with every meal.</p>

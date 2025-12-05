@@ -1,3 +1,5 @@
+#AE FINAL: Staycation Project
+
 from flask import Flask, render_template, request, redirect, url_for
 
 app = Flask(__name__)
@@ -6,11 +8,11 @@ app = Flask(__name__)
 def home():
     return render_template("final.html")
 
-@app.route("/activites")
-def activites():
-    return render_template("activites.html")
+@app.route ("/activities")
+def activities():
+    return render_template("activities.html")
 
-@app.route("/lessons")
+@app.route ("/lessons")
 def lessons():
     return render_template("ski_lessons.html")
 
